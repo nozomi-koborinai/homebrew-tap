@@ -5,41 +5,41 @@
 class GcpCostMcpServer < Formula
   desc "MCP server for estimating Google Cloud running costs"
   homepage "https://github.com/nozomi-koborinai/gcp-cost-mcp-server"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.0/gcp-cost-mcp-server-darwin-amd64"
-      sha256 "278ce59a7d261b2476236380bd71f351dafd645f9c54b0df28da4f230c4ca956"
+      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.1/gcp-cost-mcp-server-darwin-amd64"
+      sha256 "39408dff97c1a5a0498152bab4227e5c5272b09476567577e4164c770080a6d7"
 
       def install
-        bin.install "gcp-cost-mcp-server"
+        bin.install Dir["gcp-cost-mcp-server*"].first => "gcp-cost-mcp-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.0/gcp-cost-mcp-server-darwin-arm64"
-      sha256 "52b43f17e2ff33cde4d1a8554c9f0ac14fa6a361692578e6795c1c0c4c06c5a1"
+      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.1/gcp-cost-mcp-server-darwin-arm64"
+      sha256 "5166ea99493883d51624e22ece1a653eea6581c817421463c4b6f13cc432c18a"
 
       def install
-        bin.install "gcp-cost-mcp-server"
+        bin.install Dir["gcp-cost-mcp-server*"].first => "gcp-cost-mcp-server"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.0/gcp-cost-mcp-server-linux-amd64"
-      sha256 "8c2f0241cee1d56b1e5d0aed73293b5007c71b8661a35ab64dab7d93a22d6437"
+      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.1/gcp-cost-mcp-server-linux-amd64"
+      sha256 "160519cf33ff5eba000faa8e7937889eb4617bd330b10037b2ca25f15b3203f3"
       def install
-        bin.install "gcp-cost-mcp-server"
+        bin.install Dir["gcp-cost-mcp-server*"].first => "gcp-cost-mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.0/gcp-cost-mcp-server-linux-arm64"
-      sha256 "55722f463d1d2c24b0465c1b8d994ed9bb1dcd39257c56e9295fcddc541e079b"
+      url "https://github.com/nozomi-koborinai/gcp-cost-mcp-server/releases/download/v0.6.1/gcp-cost-mcp-server-linux-arm64"
+      sha256 "ba9d3f5a63d9713865ff7f9454ff950f920e264ac8483f5fbda69ce987f58962"
       def install
-        bin.install "gcp-cost-mcp-server"
+        bin.install Dir["gcp-cost-mcp-server*"].first => "gcp-cost-mcp-server"
       end
     end
   end
