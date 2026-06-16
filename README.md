@@ -21,6 +21,7 @@ brew install <formula-name>
 | [ableton-osc-mcp](https://github.com/nozomi-koborinai/ableton-osc-mcp) | MCP server for controlling Ableton Live via AbletonOSC | Alpha |
 | [gcp-cost-mcp-server](https://github.com/nozomi-koborinai/gcp-cost-mcp-server) | MCP server for estimating Google Cloud running costs | Stable |
 | [terradart-mcp](https://github.com/nozomi-koborinai/terradart) | MCP server exposing TerraDart's curated GCP factory catalog | Beta |
+| [terradart-coverage](https://github.com/nozomi-koborinai/terradart) | CLI that reports how much of an existing Terraform config is covered by TerraDart's curated factories | Beta |
 
 ## Updating
 
