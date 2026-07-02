@@ -1,22 +1,22 @@
 class TerradartMcp < Formula
   desc "MCP server exposing the curated GCP factory catalog of TerraDart"
   homepage "https://github.com/nozomi-koborinai/terradart"
-  version "0.22.0"
+  version "0.23.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.22.0/terradart-mcp-darwin-arm64"
-      sha256 "c0881c744fc2afdfa62bf249d88b429abb788c6fbad78eb1ab0fbf1242a51fba"
+      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.23.0/terradart-mcp-darwin-arm64"
+      sha256 "28c57439a541958398f3e6c6b336e3da19e2da1eeabe60abf5491dbd17b61a65"
     else
-      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.22.0/terradart-mcp-darwin-amd64"
-      sha256 "ed8e4bc5169e3cf49cd4e05c778c3ad5f5e7bb6cf0a0e1ba765d4285eab6e895"
+      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.23.0/terradart-mcp-darwin-amd64"
+      sha256 "cf3a75a2a91f5b4c53c187ba66e1c1d4e9f331b20b158b37fb9b8ea3f4de5016"
     end
   end
 
   on_linux do
-    url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.22.0/terradart-mcp-linux-amd64"
-    sha256 "41b59dea95c498e338183442595648d8a870ad15e8a9db9ecc622f41a48b499f"
+    url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.23.0/terradart-mcp-linux-amd64"
+    sha256 "b483653c11af1f27f978d354eb3a5f7ffb53c818b509d10aa6ac2ddcc945c79b"
   end
 
   def install
