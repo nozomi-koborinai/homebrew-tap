@@ -5,21 +5,21 @@
 class AbletonOscMcp < Formula
   desc "MCP server for controlling Ableton Live via AbletonOSC"
   homepage "https://github.com/nozomi-koborinai/ableton-osc-mcp"
-  version "0.1.0-alpha"
+  version "0.1.1-alpha"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.0-alpha/ableton-osc-mcp-darwin-amd64"
-      sha256 "4c305d83c2119d165f2b5a695848f13ab1b1e5ff06e4b32a85b4469c4f74f70b"
+      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.1-alpha/ableton-osc-mcp-darwin-amd64"
+      sha256 "858d7e83d098b0dcdc2295850c660fe8dac8e2984ddd08db8e9659dd0d07da41"
 
       define_method(:install) do
         bin.install Dir["ableton-osc-mcp*"].first => "ableton-osc-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.0-alpha/ableton-osc-mcp-darwin-arm64"
-      sha256 "214c08e90d1fcacc9e75c65a3d0fbffb4a6e8949feeb8f9b25a2900ff6c1c14a"
+      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.1-alpha/ableton-osc-mcp-darwin-arm64"
+      sha256 "c30b6995ef4410292f970c35359a7e1a89e43bc268be9e423188562c91e24563"
 
       define_method(:install) do
         bin.install Dir["ableton-osc-mcp*"].first => "ableton-osc-mcp"
@@ -29,15 +29,15 @@ class AbletonOscMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.0-alpha/ableton-osc-mcp-linux-amd64"
-      sha256 "6cf96f0d7f7ff234fe14f3ea8f086408002f2671d7e5eff9518231f6c6c0a846"
+      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.1-alpha/ableton-osc-mcp-linux-amd64"
+      sha256 "67429a122a9213db9f7a53c4a21e604fc991f56d43651e4ee68374b5dcf144e7"
       define_method(:install) do
         bin.install Dir["ableton-osc-mcp*"].first => "ableton-osc-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.0-alpha/ableton-osc-mcp-linux-arm64"
-      sha256 "fe402cc1f2ef2a042d24c39647115c4007cfb9444959c296b4ea23a16bfd171c"
+      url "https://github.com/nozomi-koborinai/ableton-osc-mcp/releases/download/v0.1.1-alpha/ableton-osc-mcp-linux-arm64"
+      sha256 "e635ab46626bf51cd763d9ef54d1ea160c9c1c68203423a5d4a885ba7767cb52"
       define_method(:install) do
         bin.install Dir["ableton-osc-mcp*"].first => "ableton-osc-mcp"
       end
