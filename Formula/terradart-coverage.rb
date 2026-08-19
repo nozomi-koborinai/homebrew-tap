@@ -1,22 +1,22 @@
 class TerradartCoverage < Formula
   desc "Terraform coverage checker for TerraDart"
   homepage "https://github.com/nozomi-koborinai/terradart"
-  version "0.25.0"
+  version "0.25.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.25.0/terradart-coverage-darwin-arm64"
-      sha256 "578c5c7c5d2f0a7e0c24d861879fc119b4af0f2e32fd1144ad5d248ead15fce0"
+      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.25.1/terradart-coverage-darwin-arm64"
+      sha256 "3379b848fbe1635b61e050ed31cc940c389165c90db1548cac343678f4a31b2e"
     else
-      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.25.0/terradart-coverage-darwin-amd64"
-      sha256 "f6251c6b18f69c9500a68287ffca0d47630840f3ff0fc4d8c539b59a1942ae36"
+      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.25.1/terradart-coverage-darwin-amd64"
+      sha256 "04ab0a99dce63518ad094b146c36dc1f603def96ab5922f3f7ce095bfc736093"
     end
   end
 
   on_linux do
-    url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.25.0/terradart-coverage-linux-amd64"
-    sha256 "4b911ccd44f5b4518dbff1cb620c81bf0b5ccb6e57d8f8bb2681cf543bf8edc5"
+    url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.25.1/terradart-coverage-linux-amd64"
+    sha256 "cb4d9ed1f6ba7b1f3cb0fa128e1d14dadaa5f79613319e9a5f8d205606e0be8e"
   end
 
   def install
