@@ -1,22 +1,22 @@
 class TerradartMigrate < Formula
   desc "HCL to Dart migrator for TerraDart (Terraform source tree to Stacks)"
   homepage "https://github.com/nozomi-koborinai/terradart"
-  version "0.28.1"
+  version "0.29.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.28.1/terradart-migrate-darwin-arm64"
-      sha256 "22e31f2c3d0da80c39218cea6f1a6a78eb81c05bec96c2b3c6bff881b164fc4e"
+      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.29.0/terradart-migrate-darwin-arm64"
+      sha256 "0d59fd773b5fb5c0ce7852c8074b6c1172a351fb9e734fb6f8020e533d2bd554"
     else
-      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.28.1/terradart-migrate-darwin-amd64"
-      sha256 "c5a71525f5cd7f72c857ade9a380514863b6c7da0425cde4d52b900b4397618c"
+      url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.29.0/terradart-migrate-darwin-amd64"
+      sha256 "ba6a1deedd532bd59fb05401207200b53b32b5a7d96319bdb8acd2c440da978a"
     end
   end
 
   on_linux do
-    url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.28.1/terradart-migrate-linux-amd64"
-    sha256 "3088147068e247a9f0fb6a6659fb959be7dfbff597d71bb3a4751f6fdbc5b5a6"
+    url "https://github.com/nozomi-koborinai/terradart/releases/download/v0.29.0/terradart-migrate-linux-amd64"
+    sha256 "d5cafbf38a25ee29a3b819238d1069a68454d64087c658ac6b82cbe7b7ec8212"
   end
 
   def install
