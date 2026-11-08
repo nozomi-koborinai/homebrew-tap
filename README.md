@@ -1,6 +1,6 @@
 # Homebrew Tap
 
-Homebrew formulae for my projects.
+Homebrew formulae and casks for my projects.
 
 ## Installation
 
@@ -8,10 +8,11 @@ Homebrew formulae for my projects.
 brew tap nozomi-koborinai/tap
 ```
 
-Then install any formula:
+Then install any formula or cask:
 
 ```bash
 brew install <formula-name>
+brew install --cask <cask-name>
 ```
 
 ## Available Formulae
@@ -24,11 +25,18 @@ brew install <formula-name>
 | [terradart-coverage](https://github.com/nozomi-koborinai/terradart) | CLI that reports how much of an existing Terraform config is covered by TerraDart's curated factories | Beta |
 | [terradart-migrate](https://github.com/nozomi-koborinai/terradart) | CLI that migrates an existing Terraform source tree (HCL / `.tf.json`) to a TerraDart Dart package, leaving what it cannot translate in a Terraform sidecar | Alpha |
 
+## Available Casks
+
+| Cask | Description | Status |
+|------|-------------|--------|
+| [clb](https://github.com/nozomi-koborinai/cursor-local-bridge) | Cursor Local Bridge: run local Cursor CLI agents with a cloud-agent-shaped lifecycle | Alpha |
+
 ## Updating
 
 ```bash
 brew update
 brew upgrade <formula-name>
+brew upgrade --cask <cask-name>
 ```
 
 ## Notes
