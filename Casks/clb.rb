@@ -35,7 +35,7 @@ cask "clb" do
 
   postflight_steps do
     on_macos do
-      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}}/clb"]
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "clb"], chdir: "."
     end
   end
 
